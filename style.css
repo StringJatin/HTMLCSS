@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600");
+
+/* Remove Default Margin and paddings for all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS variables to use any where in website (if you want to change theme one change here will apply to entire website) */
+:root {
+    --heading : #393A56;
+    --text : #7E7F85;
+    --theme : #FD5353;
+    --bg : #F7F8F9;
+    --footerBg : #415161;
+}
+
+body{
+    font-family: 'poppins';
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--heading);
+}
+p{
+    color: var(--text);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none; 
+}
+
+
+/* Header  */
+
+header {
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--bg);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    
+}
+.navlinks img{
+    width: 40px;
+    height: 40px;
+}
+.navlinks li{
+    margin: 0 20px;
+}
+.navlinks li a{
+    color: var(--heading);
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.header-content img{
+    max-width: 90%;
+}
+.header-info{
+    flex:60%;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: var(--theme);
+    border-radius: 5px;
+}
+
+.header-info h1{
+    font-size: 50px;
+}
+.header-info h3, .header-info p{
+    margin: 15px 0;
+}
+
+.ctn{
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: var(--theme);
+    border: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#categories{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px ;
+}
+
+#featured-products{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px auto;
+    align-items: center;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--footerBg);
+    margin-top: 80px;
+}
+
+footer h3{
+    color: whitesmoke;
+}
+
+footer li, p{
+    color: #b5b5b5b5;
+}
+
+.footer-content{
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .col{
+    flex: 1;
+    margin: 0px 20px;
+}
